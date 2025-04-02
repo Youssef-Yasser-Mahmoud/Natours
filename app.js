@@ -5,6 +5,7 @@ const tourRouter = require('./Routes/tourRouter');
 const app = express();
 
 app.use(express.json());
+app.use(express.static('./public'));
 
 app.use((req, res, next) => {
   console.log('Hi from middleware');
